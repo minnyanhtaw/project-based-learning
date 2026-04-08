@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Position Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        height: 2000px; /* for scrolling */
+        margin: 0;
+      }
+
+      h2 {
+        margin: 20px;
+      }
+
+      .container {
+        position: relative;
+        height: 300px;
+        margin: 20px;
+        border: 2px solid #333;
+        background: #f4f4f4;
+      }
+
+      .box {
+        width: 120px;
+        height: 120px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      /* Static (default) */
+      .static {
+        position: static;
+        background: gray;
+      }
+
+      /* Relative */
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background: blue;
+      }
+
+      /* Absolute */
+      .absolute {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: red;
+      }
+
+      /* Fixed */
+      .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: green;
+      }
+
+      /* Sticky */
+      .sticky {
+        position: sticky;
+        top: 0;
+        background: orange;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky">Sticky Header (Scroll Down)</div>
+
+    <h2>Position: static (default)</h2>
+    <div class="container">
+      <div class="box static">Static</div>
+    </div>
+
+    <h2>Position: relative</h2>
+    <div class="container">
+      <div class="box relative">Relative</div>
+    </div>
+
+    <h2>Position: absolute (inside relative container)</h2>
+    <div class="container">
+      <div class="box absolute">Absolute</div>
+    </div>
+
+    <h2>Position: fixed (stays on screen)</h2>
+    <div class="container">
+      <div class="box">Scroll to see fixed</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+  </body>
+</html>
