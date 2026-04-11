@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <main>
+      <header class="px-10 py-5">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold uppercase">archi_strukt</h1>
+          <nav class="hidden">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <button
+            class="py-3 px-6 bg-slate-700 uppercase text-white hover:bg-slate-800 duration-150"
+          >
+            inquire
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="relative py-36 px-10">
+        <img
+          class="h-full w-full absolute top-0 left-0 object-cover object-center -z-10"
+          src="./assets/hero-image.avif"
+          alt=""
+        />
+        <div
+          class="absolute w-full h-full top-0 left-0 bg-black opacity-50 -z-9"
+        ></div>
+
+        <div class="flex flex-col gap-8">
+          <p class="text-white">ESTABLISHED MMXXIV</p>
+          <h1 class="text-6xl text-white font-bold">Defining the Monolith.</h1>
+          <p class="text-gray-200">
+            We practice architecture as a deliberate act of carving space from
+            silence. Our structures are not just buildings, but blueprints for a
+            future grounded in permanence.
+          </p>
+
+          <div class="flex items-center gap-5">
+            <button class="text-white p-3 border border-white rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </button>
+            <p class="text-white uppercase">Explore Projects</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-36 px-10 bg-gray-100">
+        <div class="flex flex-col gap-8 mb-10">
+          <h2 class="text-5xl">Our Capabilities</h2>
+          <p class="text-gray-500">
+            We merge brutalist principles with digital precision to deliver
+            environments that transcend the ordinary.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-10">
+          <div class="bg-white p-8 shadow rounded">
+            <div class="mb-5 text-green-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="mb-5 text-3xl">Spatial Strategy</h3>
+              <p class="text-gray-500">
+                Optimization of flow and void to maximize the psychological
+                impact of physical volumes.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 shadow rounded">
+            <div class="mb-5 text-green-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="mb-5 text-3xl">Material Innovation</h3>
+              <p class="text-gray-500">
+                Sourcing and synthesizing sustainable polymers and raw stone for
+                tactile longevity.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 shadow rounded">
+            <div class="mb-5 text-green-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="mb-5 text-3xl">Digital Twin Craft</h3>
+              <p class="text-gray-500">
+                Every structure is born as a hyper- accurate digital replica,
+                ensuring structural integrity before the first stone is laid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
