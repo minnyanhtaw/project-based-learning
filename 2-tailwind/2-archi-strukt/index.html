@@ -8,15 +8,41 @@
   </head>
   <body>
     <main>
-      <header class="px-10 py-5">
+      <header class="px-10 py-5 lg:px-36 sticky top-0 left-0 w-full bg-white shadow z-50">
         <div class="flex justify-between items-center">
           <h1 class="text-2xl font-bold uppercase">archi_strukt</h1>
-          <nav class="hidden">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+          <nav class="hidden lg:block">
+            <ul class="flex items-center justify-center gap-10">
+              <li class="relative group gp">
+                <a href="/">Home</a
+                ><span
+                  class="h-px bg-black w-0 absolute bottom-0 left-0 group-hover:w-full duration-300"
+                ></span>
+              </li>
+              <li class="relative group gp">
+                <a href="#about_section">About</a
+                ><span
+                  class="h-px bg-black w-0 absolute bottom-0 left-0 group-hover:w-full duration-300"
+                ></span>
+              </li>
+              <li class="relative group gp">
+                <a href="#service_section">Service</a
+                ><span
+                  class="h-px bg-black w-0 absolute bottom-0 left-0 group-hover:w-full duration-300"
+                ></span>
+              </li>
+              <li class="relative group gp">
+                <a href="#studio_section">Studio</a
+                ><span
+                  class="h-px bg-black w-0 absolute bottom-0 left-0 group-hover:w-full duration-300"
+                ></span>
+              </li>
+              <li class="relative group gp">
+                <a href="#contact_section">Contact</a
+                ><span
+                  class="h-px bg-black w-0 absolute bottom-0 left-0 group-hover:w-full duration-300"
+                ></span>
+              </li>
             </ul>
           </nav>
           <button
@@ -28,7 +54,7 @@
       </header>
 
       <!-- Hero Section -->
-      <section class="relative py-36 px-10">
+      <section class="relative py-36 px-10 lg:px-36">
         <img
           class="h-full w-full absolute top-0 left-0 object-cover object-center -z-10"
           src="./assets/hero-image.avif"
@@ -38,7 +64,7 @@
           class="absolute w-full h-full top-0 left-0 bg-black opacity-50 -z-9"
         ></div>
 
-        <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-8 md:max-w-lg">
           <p class="text-white">ESTABLISHED MMXXIV</p>
           <h1 class="text-6xl text-white font-bold">Defining the Monolith.</h1>
           <p class="text-gray-200">
@@ -48,28 +74,30 @@
           </p>
 
           <div class="flex items-center gap-5">
-            <button class="text-white p-3 border border-white rounded-2xl">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-                />
-              </svg>
-            </button>
+            <a href="#service_section">
+              <button class="text-white p-3 border border-white rounded-2xl cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                  />
+                </svg>
+              </button>
+            </a>
             <p class="text-white uppercase">Explore Projects</p>
           </div>
         </div>
       </section>
 
-      <section class="py-36 px-10 bg-gray-100">
+      <section id="about_section" class="py-36 px-10 bg-gray-100 lg:px-36">
         <div class="flex flex-col gap-8 mb-10">
           <h2 class="text-5xl">Our Capabilities</h2>
           <p class="text-gray-500">
@@ -78,7 +106,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-10">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div class="bg-white p-8 shadow rounded">
             <div class="mb-5 text-green-800">
               <svg
@@ -133,7 +161,7 @@
             </div>
           </div>
 
-          <div class="bg-white p-8 shadow rounded">
+          <div class="bg-white p-8 shadow rounded md:col-span-2">
             <div class="mb-5 text-green-800">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +190,7 @@
         </div>
       </section>
 
-      <section class="py-36 px-10">
+      <section id="service_section" class="py-36 px-10 lg:px-36">
         <div class="flex flex-col gap-5 mb-10">
           <h2 class="text-5xl">Curated Work</h2>
           <div class="flex items-center gap-5">
@@ -179,7 +207,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-10">
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div class="flex flex-col gap-5">
             <img
               class="aspect-3/4 object-cover object-center"
@@ -212,7 +240,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-5 lg:pt-20">
             <img
               class="aspect-3/4 object-cover object-center"
               src="./assets/project-2.webp"
@@ -278,12 +306,16 @@
         </div>
       </section>
 
-      <section class="py-36 px-10 bg-gray-100">
-        <div class="flex flex-col gap-10">
-          <div class="p-5 bg-white rotate-3 shadow-2xl">
-            <img class="aspect-square" src="./assets/hero-image.avif" alt="" />
+      <section id="studio_section" class="py-36 px-10 bg-gray-100 lg:px-36">
+        <div class="flex flex-col gap-10 md:flex-row-reverse">
+          <div class="p-5 bg-white rotate-3 shadow-2xl md:basis-2/5">
+            <img
+              class="aspect-square md:size-full md:object-cover md:object-center"
+              src="./assets/hero-image.avif"
+              alt=""
+            />
           </div>
-          <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-8 md:basis-3/5">
             <div>
               <h2 class="text-5xl font-bold mb-5">The Studio</h2>
               <p class="text-gray-500">
@@ -318,8 +350,8 @@
         </div>
       </section>
 
-      <section class="py-36 px-10">
-        <div class="mb-10">
+      <section id="contact_section" class="py-36 px-10">
+        <div class="mb-10 md:max-w-lg md:mx-auto">
           <h2 class="text-5xl font-bold text-center mb-5">
             Let's Discuss Your Vision
           </h2>
@@ -329,7 +361,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="md:max-w-lg md:mx-auto">
           <form action="" class="w-full bg-gray-100 p-8 grid grid-cols-1 gap-5">
             <div>
               <input
@@ -380,9 +412,9 @@
         </div>
       </section>
 
-      <footer class="py-36 px-10 bg-gray-100">
-        <div class="grid grid-cols-1 gap-8">
-          <div>
+      <footer class="py-36 px-10 bg-gray-100 lg:px-36">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+          <div class="md:col-span-3 lg:col-span-1">
             <h1 class="text-2xl font-bold mb-2"><a href="">ARCHI_STRUKT</a></h1>
             <p class="text-gray-500">
               &copy; 2024 <a href="">ARCHI_STRUKT</a>. Built for the
